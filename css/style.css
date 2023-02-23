@@ -575,7 +575,17 @@ body{
         width: calc(50% - 2px);
         background-size: cover;
     }
+    .main__treds-item{
+        font-size: 15px;
+    }
+    .main__treds-item__category{
+        gap: 5px;
+    }
+    .main__treds-item__category a{
+        font-size: 14px;
+    }
 }
+
 @media (max-height:770px) and (min-height: 641px) and (max-width:788px)  and (min-width:641px){
     .main__treds-item{
         font-size: 11px;
@@ -589,7 +599,11 @@ body{
 }
 
 
-@media(min-width:768px){
+
+
+
+
+/* @media(min-width:768px){
     .main__trends-items{
         display: flex; gap: 4px;
         flex-wrap: wrap;
@@ -618,7 +632,7 @@ body{
     .main__trends__title::before{
         left: 30px;
     }
-}
+} */
 @media (min-width:641px) and (max-width:1200px)  and (orientation:portrait) {
     .main__trends-items{
         display: flex; gap: 4px;
@@ -642,7 +656,7 @@ body{
         background-size: cover;
     }
 }
-@media (min-width:641px) and (max-width:1200px) and (min-height: 641px) and (orientation:landscape) {
+@media (min-width:641px) and (max-width:1200px) and (orientation:landscape) {
     .main__trends-items{
         display: flex; gap: 1px;
         flex-wrap: wrap;
@@ -664,7 +678,21 @@ body{
         width: calc(24.5% - 0.5px);
         background-size: cover;
     }
+    .main__treds-item{
+        font-size: 11px;
+    }
+    .main__treds-item__category{
+        gap: 5px;
+    }
+    .main__treds-item__category a{
+        font-size: 14px;
+    }
 }
+
+
+
+
+
 
 @media(min-width:1600px){
     .main__trends__title{
@@ -809,7 +837,7 @@ body{
     left: 0;
     max-width: 100%;
     width: auto;
-    height: 100%;
+    height: auto;
 }
 
 
@@ -1215,6 +1243,10 @@ body{
     text-align: center;
 }
 
+.shop__item{
+    align-items: stretch;
+}
+
 .shop__item__description__title{
     font-family: OpenSansBold;
     font-size: 17px;
@@ -1261,12 +1293,12 @@ body{
 }
 
 .shop__item__description__button{
-    height: 100%;
     background-color: #b59f5b;
     font-family: OpenSansBold;
     font-size: 14px;
     text-transform: uppercase;
     padding: 18px 25px;
+
 }
 
 .shop__item__description__button:hover{
@@ -1288,10 +1320,14 @@ body{
     z-index: 2;
     top: -40px;
     margin: 0 auto;
-    height: 250px;
+    /* height: 250px; */
     padding-left: 30px;
     padding-right: 30px;
     max-width: 300px;
+    height: calc(100% - 280px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 @media(min-width:768px){
@@ -1336,10 +1372,10 @@ body{
         width:calc(33% - 5px);
     }
     .shop__item__description{
-
-        display:inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         vertical-align: bottom;
-        height: 250px;
     }
 }
 
